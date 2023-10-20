@@ -48,11 +48,17 @@ btnScrollTo.addEventListener('click', function (e) {
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Cookie creating
+// Cookie :
 message.classList.add('cookie-message');
 message.innerHTML =
   'We use cookied for improved functionality and analytics. <button class="btn btn--close-cookie"> Got it!</button>';
 header.append(message);
+
+// Cookie styles :
+message.style.backgroundColor = '#37383d';
+message.style.width = '104%';
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
 
 // EVENT DELEGATION -- Instead of forEach for better performance
 // 1. Add event listener to common parent element
@@ -75,7 +81,6 @@ message.addEventListener('click', function () {
 });
 
 // --------- TAB MENU ----------
-
 // Event delegation
 tabsContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operations__tab');
@@ -247,7 +252,6 @@ const sliderFunc = function () {
     createDots(); // To create dots
     activateDot(0); // To active first at the beginning.
   };
-
   init();
 
   btnRight.addEventListener('click', nextSlide);
@@ -269,9 +273,3 @@ const sliderFunc = function () {
   });
 };
 sliderFunc();
-
-// Cookie styles
-message.style.backgroundColor = '#37383d';
-message.style.width = '104%';
-message.style.height =
-  Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
