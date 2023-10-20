@@ -3,7 +3,9 @@
 ![Bankist1](./img/Bankist2.png)
 ![Bankist1](./img/Bankist3.png)
 ## 💨 Proje Hakkında :
-Bu projede öğrenmiş olduğum 'Gelişmiş DOM Eventleri' ni kullanarak bir banka sayfasını 'The Complate JS Course - Jonas Schmedthmann' ile beraber oluşturdum.
+* Bu projede öğrenmiş olduğum 'Gelişmiş DOM Eventleri' ni kullanarak bir banka sayfasını 'The Complate JS Course - Jonas Schmedthmann' ile beraber oluşturdum.
+* Projenin canlı versiyonuna linkten erişebilirsiniz ➡ <a>https://bankist-app-dom.vercel.app/</a>
+
 ## ⚡ Projemde barındırdığım dinamik JS etkileşimleri :
 * Event delegation kullanılarak "Menu Fade Animation" ve Intersection Observer kullanılarak oluşturulmuş sticky navbar.
 * Tıklamada "Smooth Scroll" event.
