@@ -13,9 +13,9 @@ Bu projede öğrenmiş olduğum 'Gelişmiş DOM Eventleri' ni kullanarak bir ban
 * Event delegation yöntemi kullanılarak oluşturulmuş "Tab Component".
 * "Slider".
 * CSS kullanılarak oluşturulmuş "Modal" yapısı.
-## 3- 🛠 Uygulamayı oluştururken kullandığım teknolojiler :
+## 🛠 Uygulamayı oluştururken kullandığım teknolojiler :
 * <img src="https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript"/>
 * <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3"/>
 * <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">
-## 4- 💻 Projenin kurulumu :
+## 💻 Projenin kurulumu :
 * Projenin kurulumu için herhangi bir API veya Bundler gerekmemektedir.
