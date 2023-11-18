@@ -21,11 +21,13 @@
 
         &--left {
             left: 6%;
+            padding-bottom: 1%;
             transform: translate(-50%, -50%);
         }
 
         &--right {
             right: 6%;
+            padding-bottom: 1%;
             transform: translate(50%, -50%);
         }
     }
@@ -54,6 +56,10 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+
+    @include respond(phone){
+        bottom: 0%;
+    }
 
     &__dot {
         border: none;

@@ -30,7 +30,7 @@
 
     &--hidden {
         opacity: 0;
-        transform: translateY(8rem);
+        transform: translateY(5rem);
     }
 
     &__title {
@@ -55,6 +55,14 @@
 
 p {
     color: #666;
+
+    @include respond(tab-port){
+        width: 100%;
+    }
+
+    @include respond(phone){
+        width: 80%;
+    }
 }
 
 /* This is BAD for accessibility! Don't do in the real world! */

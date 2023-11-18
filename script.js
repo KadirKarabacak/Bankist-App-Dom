@@ -56,9 +56,7 @@ header.append(message);
 
 // Cookie styles :
 message.style.backgroundColor = '#37383d';
-message.style.width = '104%';
-message.style.height =
-  Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
+message.style.width = '100%'
 
 // EVENT DELEGATION -- Instead of forEach for better performance
 // 1. Add event listener to common parent element
@@ -155,7 +153,7 @@ const revealSection = function (entries, observer) {
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.1,
+  threshold: 0.2,
 });
 
 allSections.forEach(section => {
@@ -188,7 +186,6 @@ imgTargets.forEach(img => imgObserver.observe(img));
 
 // --- SLIDER ---
 const sliderFunc = function () {
-  const slider = document.querySelector('.slider');
   const slides = document.querySelectorAll('.slide');
   const btnRight = document.querySelector('.slider__btn--right');
   const btnLeft = document.querySelector('.slider__btn--left');

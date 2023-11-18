@@ -7,6 +7,11 @@
     padding: 0 6rem;
     z-index: 100;
     transition: 0.5s;
+    padding: 0 3rem;
+
+    @include respond(phone){
+      padding: 1% 2%;
+    }
 
     &.sticky {
         position: fixed;
@@ -17,6 +22,10 @@
       &__logo {
         height: 4.5rem;
         transition: all 0.3s;
+
+        @include respond(phone){
+          height: 3.5rem;
+        }
       }
       
       &__links {
@@ -27,6 +36,14 @@
       
       &__item {
         margin-left: 4rem;
+
+        @include respond(tab-port){
+          margin-left: 2rem;
+        }
+
+        @include respond(phone){
+          margin-left: 1rem;
+        }
       }
       
       &__link:link,

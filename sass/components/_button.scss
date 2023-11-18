@@ -10,6 +10,10 @@
     cursor: pointer;
     transition: all 0.3s;
 
+    @include respond(tab-port){
+        padding: 1.25rem 2.5rem;
+    }
+
     &:hover {
         background-color: $color-primary-darker;
     }

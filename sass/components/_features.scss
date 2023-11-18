@@ -1,8 +1,27 @@
 .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin: 0 12rem;
+    gap: 3rem;
+    margin: 0 6rem;
+
+    // @include respond(tab-land){
+    //     gap: 4rem;
+    // }
+
+    @include respond(tab-port){
+        gap: 4rem;
+        margin: 0 1rem;
+    }
+
+    @include respond(phone){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 3rem;
+    }
 
     &__header {
         font-size: 2rem;
@@ -11,7 +30,7 @@
 
     &__img {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
         transition: 0.5s;
 
         &:hover {
@@ -22,8 +41,16 @@
     &__feature {
         align-self: center;
         justify-self: center;
-        width: 70%;
+        width: 90%;
         font-size: 1.5rem;
+
+        @include respond(tab-land){
+            width: 100%;
+        }
+
+        @include respond(phone){
+            display: contents;
+        }
     }
 
     &__icon {
@@ -41,6 +68,12 @@
             width: 2.5rem;
             font-size: 20px;
             fill: $color-primary;
+
+            @include respond(phone){
+                font-size: 12px;
+                height: auto;
+                width: auto;
+            }
         }
     }
 }

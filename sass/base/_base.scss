@@ -10,6 +10,26 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    // Büyük Masaüstü
+    @include respond (big-desktop) {
+        font-size: 75%; // 1rem = 12px olsun istiyoruz, 12/16 = 75%
+    }
+
+    // Dikey tablet
+    @include respond (tab-land) { // width < 1200?
+        font-size: 56.25%; // 1rem = 9px olsun istiyoruz, 9/16 = 56.25%
+    }
+
+    // Yatay tablet
+    @include respond (tab-port) { // width < 900?
+        font-size: 50%; // 1rem = 8px olsun istiyoruz, 8/16 = 50%
+    }
+
+    // Telefon
+    @include respond (phone) { // width < 600?
+        font-size: 30%; // 1rem = 4.8px olsun istiyoruz, 4.8/16 = 30%
+    }
 }
 
 body {
