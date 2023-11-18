@@ -146,6 +146,10 @@ img {
     width: 100%;
     border-radius: 10px;
     transition: 0.5s; }
+    @media (min-width: 112.5em) {
+      .features__img {
+        width: 90%;
+        height: 90%; } }
     .features__img:hover {
       scale: 1.03; }
   .features__feature {
@@ -543,7 +547,8 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 60rem;
+  width: 100%;
+  max-width: 64rem;
   background-color: #f3f3f3;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);

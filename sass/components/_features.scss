@@ -33,6 +33,11 @@
         border-radius: 10px;
         transition: 0.5s;
 
+        @include respond(big-desktop){
+            width: 90%;
+            height: 90%;
+        }
+
         &:hover {
             scale: 1.03;
         }
