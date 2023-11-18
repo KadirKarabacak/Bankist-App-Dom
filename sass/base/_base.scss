@@ -10,6 +10,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
     // Büyük Masaüstü
     @include respond (big-desktop) {
@@ -38,4 +39,10 @@ body {
     color: #444;
     line-height: 1.9;
     background-color: #f3f3f3;
+}
+
+a:focus,
+button:focus,
+input:focus{
+  outline: 0;
 }

@@ -55,6 +55,7 @@
 
 p {
     color: #666;
+    font-size: 1.8rem;
 
     @include respond(tab-port){
         width: 100%;
@@ -76,4 +77,48 @@ img {
 
 .lazy-img {
     filter: blur(20px);
+}
+
+h1 {
+    font-size: 5.5rem;
+    line-height: 1.35;
+
+    @include respond(tab-port){
+        font-size: 5rem;
+    }
+
+    @include respond(phone){
+        font-size: 6.5rem;
+    }
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    @include respond(tab-port){
+        font-size: 1.5rem;
+    }
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}
+
+.highlight {
+    position: relative;
+  }
+  
+  .highlight::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-image: $gradient-primary;
 }

@@ -8,6 +8,81 @@
         padding: 0
     }
 
+
+    // Hamburger menu
+    &__ham-menu{
+        display: none;
+        width: 5rem;
+        padding: 2.2rem 0;
+
+        @include respond(phone){
+            display: block;
+        }
+
+        &--open{
+            width: 100%;
+        }
+
+        &--close{
+            width: 100%;
+        }
+    }
+
+    &__sm-menu{
+        background: #fff;
+        position: absolute;
+        width: 100vw;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+        &-link{
+            list-style: none;
+        }
+
+        &--active {
+            visibility: hidden;
+            opacity: 0;
+
+            @include respond(phone){
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        &-link:first-child a {
+            border-top: 1px solid #eee;
+          }
+
+        &-link-last {
+            border-bottom: 0;
+        }
+
+        &-link a {
+            display: block;
+            text-decoration: none;
+            padding: 2.5rem 5rem;
+            font-size: 2.3rem;
+            color: #333;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $color-primary;
+              }
+          }
+    }
+
+    // Normal kod
     &__title {
         flex: 1;
         max-width: 115rem;
@@ -26,7 +101,7 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            padding: 13% 0;
+            padding: 30% 0;
             text-align: center;
         }
     }
@@ -45,48 +120,3 @@
         }
     }
 }
-
-// Header components
-h1 {
-    font-size: 5.5rem;
-    line-height: 1.35;
-
-    @include respond(tab-port){
-        font-size: 5rem;
-    }
-
-    @include respond(phone){
-        font-size: 6.5rem;
-    }
-}
-
-h4 {
-    font-size: 2.4rem;
-    font-weight: 500;
-
-    @include respond(tab-port){
-        font-size: 1.5rem;
-    }
-
-    @include respond(phone){
-        font-size: 2.5rem;
-    }
-}
-
-.highlight {
-    position: relative;
-  }
-  
-  .highlight::after {
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.7;
-    transform: scale(1.07, 1.05) skewX(-15deg);
-    background-image: $gradient-primary;
-  }

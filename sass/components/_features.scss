@@ -4,10 +4,6 @@
     gap: 3rem;
     margin: 0 6rem;
 
-    // @include respond(tab-land){
-    //     gap: 4rem;
-    // }
-
     @include respond(tab-port){
         gap: 4rem;
         margin: 0 1rem;
@@ -39,7 +35,7 @@
         }
 
         &:hover {
-            scale: 1.03;
+            scale: .95;
         }
     }
 
@@ -78,6 +74,12 @@
                 font-size: 12px;
                 height: auto;
                 width: auto;
+            }
+
+            @include respond(big-desktop){
+                height: auto;
+                width: auto;
+                font-size: 25px;
             }
         }
     }

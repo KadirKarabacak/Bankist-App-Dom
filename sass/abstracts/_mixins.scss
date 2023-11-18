@@ -15,4 +15,9 @@
     @if $breakpoint == big-desktop {
         @media  (min-width:112.5em) { @content }; // 1800px
     }
+
+    // Bunu başka projede kullanma, buraya modal'a özel
+    @if $breakpoint == phone-modal {
+        @media (max-width:25em) { @content }
+    }
 }

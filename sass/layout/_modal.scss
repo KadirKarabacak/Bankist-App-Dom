@@ -4,17 +4,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 64rem;
+    max-width: 72rem;
     background-color: #f3f3f3;
     padding: 5rem 6rem;
     box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: all 0.5s;
 
+    @include respond(phone-modal){
+      width: 90%;
+      max-width: 86dvw;
+    }
+
+    &--btn{
+      background-color: $color-primary;
+      color: #fff;
+    }
+
     &__header {
         font-size: 3.25rem;
         margin-bottom: 4.5rem;
         line-height: 1.5;
+        text-align: center;
       }
       
       &__form {
@@ -22,7 +33,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
-        gap: 2.5rem;
+        gap: 2rem;
 
         & label {
             font-size: 1.7rem;

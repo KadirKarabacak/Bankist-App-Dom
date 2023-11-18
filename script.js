@@ -18,6 +18,11 @@ const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
 const tabsContent = document.querySelectorAll('.operations__content');
 
+// Hamburger menu
+const hamburgerContainer = document.querySelector(".header__sm-menu");
+const menuOpen = document.querySelector(".header__ham-menu--open");
+const menuClose = document.querySelector(".header__ham-menu--close");
+
 // Open modal classlists...
 const openModal = function (e) {
   e.preventDefault(); // To fix auto jump
@@ -122,21 +127,21 @@ nav.addEventListener('mouseout', handleHover.bind(1));
 const initialCoords = section1.getBoundingClientRect();
 
 // STICKY NAVIGATION
-const navHeight = nav.getBoundingClientRect().height;
+// const navHeight = nav.getBoundingClientRect().height;
 
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  if (entry.isIntersecting == false) {
-    nav.classList.add('sticky');
-  } else nav.classList.remove('sticky');
-};
+// const stickyNav = function (entries) {
+//   const [entry] = entries;
+//   if (entry.isIntersecting == false) {
+//     nav.classList.add('sticky');
+//   } else nav.classList.remove('sticky');
+// };
 
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`, // It starts 90px indent
-});
-headerObserver.observe(header);
+// const headerObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: `-${navHeight}px`,
+// });
+// headerObserver.observe(header);
 
 //! Revealing elements on Scroll
 const allSections = document.querySelectorAll('.section');
@@ -270,3 +275,15 @@ const sliderFunc = function () {
   });
 };
 sliderFunc();
+
+const controlHamburger = function(){
+  [menuClose, menuOpen].forEach(menu=> {
+    menu.addEventListener("click", function(){
+      hamburgerContainer.classList.toggle('header__sm-menu--active')
+      menuOpen.classList.toggle("d-none");
+      menuClose.classList.toggle("d-none");
+    })
+  })
+}
+
+controlHamburger()

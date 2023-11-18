@@ -104,6 +104,12 @@
     @include respond(phone){
         font-size: 12px;
     }
+
+    @include respond(big-desktop){
+        height: auto;
+        width: auto;
+        font-size: 25px;
+    }
 }
 
 .tabIcon2 {
@@ -113,6 +119,12 @@
     @include respond(phone){
         font-size: 12px;
     }
+
+    @include respond(big-desktop){
+        height: auto;
+        width: auto;
+        font-size: 25px;
+    }
 }
 
 .tabIcon3 {
@@ -121,5 +133,11 @@
 
     @include respond(phone){
         font-size: 12px;
+    }
+
+    @include respond(big-desktop){
+        height: auto;
+        width: auto;
+        font-size: 25px;
     }
 }
