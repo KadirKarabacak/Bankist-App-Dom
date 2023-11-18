@@ -1,0 +1,53 @@
+// Abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// Base
+@import "base/animations";
+@import "base/base";
+@import "base/general";
+@import "base/typography";
+@import "base/utilities";
+
+// Components
+@import "components/button";
+@import "components/features";
+@import "components/operations";
+@import "components/slider";
+@import "components/cookie";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/modal";
+
+@import "pages/home";
+
+//! CSS dosyalarını birleştirmek için indiriyoruz.
+//* İndirme   : "npm i concat --save-dev" 
+//* Kullanımı : concat -o output.css ./1.css ./2.css ./3.css
+
+//! Prefixer (Otomatik -webkit- önekleri ekleme, browser desteği)
+//* İndirme : npm i autoprefixer --save-dev
+
+//! Prefixer çalışması için
+//* İndirme   : npm i postcss-cli --save-dev
+//* Kullanımı : postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css
+
+//! Son olarak "Compress"
+//* İndirmeye gerek yok node-sass bu işi yapıyor.
+//* Kullanımı : node-sass [input file] css/style.prefix.css [output file] css/style.css --output-style compressed
+
+//! TÜM BU AŞAMALARI TEK SEFERDE YAPMAK İÇİN
+//* İndirme   : npm i npm-run-all --save-dev
+//* Kullanımı : "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+//: Tüm önceki başlıkları bunun içinde verip tek seferde çalıştırabiliriz.
+
+//! Ayrıca geliştirme için watch:sass ve live-server aynı anda çalıştırmak için
+/* 
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "npm-run-all --parallel devserver watch:sass"
+
+    "start": "npm-run-all --parallel devserver watch:sass" // Tamamını aynı anda çalıştırır.
+*/

@@ -1,0 +1,51 @@
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0 12rem;
+
+    &__header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 20px;
+        transition: 0.5s;
+
+        &:hover {
+            scale: 1.03;
+        }
+    }
+
+    &__feature {
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary-opacity;
+        height: 5.5rem;
+        width: 5.5rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+
+        & i{
+            height: 2.5rem;
+            width: 2.5rem;
+            font-size: 20px;
+            fill: $color-primary;
+        }
+    }
+}
+
+.icons {
+    color: $color-primary;
+}
+

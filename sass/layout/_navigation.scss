@@ -1,0 +1,58 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+    padding: 0 6rem;
+    z-index: 100;
+    transition: 0.5s;
+
+    &.sticky {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: 0.5s;
+      }
+      
+      &__logo {
+        height: 4.5rem;
+        transition: all 0.3s;
+      }
+      
+      &__links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+      
+      &__item {
+        margin-left: 4rem;
+      }
+      
+      &__link:link,
+      &__link:visited {
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s;
+      }
+      
+      &__link--btn:link,
+      &__link--btn:visited {
+        padding: 0.8rem 2.5rem;
+        border-radius: 3rem;
+        background-color: var(--color-primary);
+        color: #222;
+      }
+      
+      &__link--btn:hover,
+      &__link--btn:active {
+        color: inherit;
+        background-color: var(--color-primary-darker);
+        color: #333;
+      }
+  }
+  
+  
