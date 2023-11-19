@@ -19,6 +19,8 @@
 * <img src="https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript"/>
 * <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3"/>
 * <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">
+* <link rel="icon" href="https://drive.google.com/file/d/1RYep06OXGsCYPx2SgDKMFUuNEkKWgWu6/view?usp=drive_link" type="image/x-icon">
+
 ## 💻 Projenin kurulumu :
 * Projenin kurulumu için herhangi bir API veya Bundler gerekmemektedir.
 ## :phone: İletişim
