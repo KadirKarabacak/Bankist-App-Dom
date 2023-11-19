@@ -3,7 +3,7 @@
 ![Bankist1](./img/Bankist2.png)
 ![Bankist1](./img/Bankist3.png)
 ## 💨 Proje Hakkında :
-* Bu projede öğrenmiş olduğum 'Gelişmiş DOM Eventleri' ni kullanarak bir banka sayfasını 'The Complate JS Course - Jonas Schmedthmann' ile beraber oluşturdum.
+* Bu projemi, öğrenmiş olduğum 'Gelişmiş DOM Eventleri'ni kullanarak daha önceki <a href="https://github.com/KadirKarabacak/Bankist-App">Bankist-App</a> projeme daha iyi bir arayüz olması adına oluşturdum. Yakında iki projemi birleştirmeyi hedefliyorum.
 * Projenin canlı versiyonuna linkten erişebilirsiniz ➡ <a>https://bankist-app-dom.vercel.app/</a>
 
 ## ⚡ Projemde barındırdığım dinamik JS etkileşimleri :
@@ -16,10 +16,7 @@
 * "Slider".
 * CSS kullanılarak oluşturulmuş "Modal" yapısı.
 ## 🛠 Uygulamayı oluştururken kullandığım teknolojiler :
-* <img src="https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript"/>
-* <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3"/>
-* <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">
-* <link rel="icon" href="https://drive.google.com/file/d/1RYep06OXGsCYPx2SgDKMFUuNEkKWgWu6/view?usp=drive_link" type="image/x-icon">
+![Tech-icon](./tech-icons/html-icon.png) ![Tech-icon](./tech-icons/css-icon.png) ![Tech-icon](./tech-icons/js-icon.png) ![Tech-icon](./tech-icons/sass-icon.png) ![Tech-icon](./tech-icons/npm-icon.png)
 
 ## 💻 Projenin kurulumu :
 * Projenin kurulumu için herhangi bir API veya Bundler gerekmemektedir.
