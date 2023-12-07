@@ -4,7 +4,7 @@
 ![Bankist1](./img/Bankist3.png)
 ## 💨 Proje Hakkında :
 * Bu projemi, öğrenmiş olduğum 'Gelişmiş DOM Eventleri'ni kullanarak daha önceki <a href="https://github.com/KadirKarabacak/Bankist-App">Bankist-App</a> projeme daha iyi bir arayüz olması adına oluşturdum. Yakında iki projemi birleştirmeyi hedefliyorum.
-* Projenin canlı versiyonuna linkten erişebilirsiniz ➡ <a>https://bankist-app-dom.vercel.app/</a>
+* Projenin canlı versiyonuna linkten erişebilirsiniz ➡ <a href="https://bankist-app-dom-k.netlify.app/">Bankist-App-DOM</a>
 
 ## ⚡ Projemde barındırdığım dinamik JS etkileşimleri :
 * Event delegation kullanılarak "Menu Fade Animation" ve Intersection Observer kullanılarak oluşturulmuş sticky navbar.
